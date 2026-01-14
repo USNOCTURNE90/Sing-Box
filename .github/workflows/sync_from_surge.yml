@@ -2,29 +2,24 @@ name: Sync from Surge
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天凌晨自动拉取
-  workflow_dispatch:     # 支持手动点击运行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout self (Sing-Box)
+      - name: Checkout Sing-Box
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT }} # 自动引用你在 Secret 里存的 Token
+          token: ${{ secrets.PAT }} # 这一步会使用你刚刚设置的 Secret
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-
-      - name: Pull and Convert
+      - name: Pull and Convert Rules
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
@@ -43,46 +38,42 @@ jobs:
                   if not l or l.startswith("#"): continue
                   ps = l.split(",")
                   px = ps[0].upper()
-                  if px in vp and len(ps) >= 2: 
-                      rd[vp[px]].append(ps[1].strip())
-                  elif re.match(r"^\d+\.\d+\.\d+\.\d+(/\d+)?$", l): 
-                      rd["ip_cidr"].append(l if "/" in l else f"{l}/32")
-                  elif "." in l and not any(c in l for c in [":", "/", " "]): 
-                      rd["domain_suffix"].append(l)
+                  if px in vp and len(ps) >= 2: rd[vp[px]].append(ps[1].strip())
+                  elif re.match(r"^\d+\.\d+\.\d+\.\d+(/\d+)?$", l): rd["ip_cidr"].append(l if "/" in l else f"{l}/32")
+                  elif "." in l and not any(c in l for c in [":", "/", " "]): rd["domain_suffix"].append(l)
               act = {k: v for k, v in rd.items() if v}
               return {"version": 1, "rules": [act]} if act else None
 
-          # 1. 克隆 Surge 仓库到 /tmp
+          # 克隆 Surge 仓库
           token = os.environ.get("GITHUB_TOKEN")
           surge_url = f"https://x-access-token:{token}@github.com/USNOCTURNE90/Surge.git"
           temp_dir = Path("/tmp/surge_rules")
           if temp_dir.exists(): shutil.rmtree(temp_dir)
           subprocess.run(["git", "clone", surge_url, str(temp_dir)], check=True)
 
-          # 2. 识别并转换
-          # 排除脚本、配置、文档
+          # 识别无后缀规则文件并转换
           excludes = [".git", ".github", "LICENSE", "README.md", "format_rules.py", "full_sync.py"]
-          files = [f for f in temp_dir.glob("*") if f.is_file() and f.name not in excludes and f.suffix not in [".py", ".yml", ".md", ".conf"]]
+          files = [f for f in temp_dir.glob("*") if f.is_file() and f.name not in excludes and f.suffix not in [".py", ".yml", ".md"]]
           
           processed = 0
           for f_path in files:
-              print(f"转换文件中: {f_path.name}")
               with open(f_path, "r", encoding="utf-8") as f:
                   sb_data = parse_to_sb(f.readlines())
               if sb_data:
-                  # 存入 Sing-Box 仓库根目录，统一加 .json 方便识别
+                  # 在 Sing-Box 仓库根目录生成同名的 .json 文件
                   target = Path(".") / f"{f_path.name}.json"
                   with open(target, "w", encoding="utf-8") as f:
                       json.dump(sb_data, f, indent=2, ensure_ascii=False)
                   processed += 1
 
-          # 3. 推送回 Sing-Box
+          # 推送
           if processed > 0:
+              subprocess.run(["git", "config", "user.name", "GitHub Actions Bot"], check=True)
+              subprocess.run(["git", "config", "user.email", "actions@github.com"], check=True)
               subprocess.run(["git", "add", "*.json"], check=True)
-              if subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout.strip():
-                  subprocess.run(["git", "commit", "-m", f"自动拉取同步: {get_time()}"], check=True)
+              status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
+              if status.strip():
+                  subprocess.run(["git", "commit", "-m", f"Sync from Surge: {get_time()}"], check=True)
                   subprocess.run(["git", "push"], check=True)
-                  print("✅ 转换完成并已推送到 Sing-Box 仓库")
-              else:
-                  print("ℹ️ 内容无变化")
+                  print("Sync successful.")
           '
