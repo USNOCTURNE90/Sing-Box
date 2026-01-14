@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "api.viu.now.com"
+      ],
+      "domain_suffix": [
+        "fast.com",
+        "netflix.com",
+        "netflix.net",
+        "nflxext.com",
+        "nflximg.com",
+        "nflximg.net",
+        "nflxso.net",
+        "nflxvideo.net",
+        "aiv-cdn.net",
+        "amazonvideo.com",
+        "llnwd.net",
+        "mytvsuper.com",
+        "tvb.com",
+        "global.edge.bamgrid.com",
+        "disneyplus.com",
+        "disney-plus.net",
+        "disneystreaming.com",
+        "dssott.com",
+        "bamgrid.com",
+        "registerdisney.go.com",
+        "disney.com",
+        "disneyjunior.com",
+        "execute-api.us-east-1.amazonaws.com",
+        "primevideo.com"
+      ],
+      "process_name": [
+        "com.disney.disneyplus"
+      ]
+    }
+  ]
+}

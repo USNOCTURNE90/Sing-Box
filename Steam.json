@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "steampowered.com",
+        "steamcommunity.com",
+        "steamstatic.com",
+        "steamgames.com",
+        "akamaihd.net",
+        "steamcloud-sg.s3.dualstack.ap-southeast-1.amazonaws.com",
+        "steamcloud-tyo.s3.dualstack.ap-northeast-1.amazonaws.com",
+        "r11.o.lencr.org",
+        "steam-chat.com"
+      ],
+      "ip_cidr": [
+        "45.207.10.185/24"
+      ]
+    }
+  ]
+}

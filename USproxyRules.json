@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cdn.usefathom.com"
+      ],
+      "domain_suffix": [
+        "tktn.be",
+        "hcaptcha.com",
+        "mixpanel.com",
+        "tvsquared.com",
+        "truthsocial.com",
+        "us.etrade.com",
+        "chase.com",
+        "vanguard.com",
+        "azureedge.us",
+        "browser-intake-us5-datadoghq.com",
+        "cdn.honey.io",
+        "i.honey-images.com",
+        "mobileapi.keepcalling.net",
+        "px-cdn.net",
+        "px-cloud.net",
+        "sc-static.net",
+        "hotjar.com",
+        "ahrefs.com",
+        "cloudflareinsights.com",
+        "tapad.com",
+        "ugoearn.com",
+        "tello.com",
+        "tellocdn.com",
+        "redpocket.com",
+        "amazonaws.com",
+        "adjust.com",
+        "vungle.com",
+        "smaato.net",
+        "applovin.com",
+        "inner-active.mobi",
+        "perimeterx.net",
+        "braze.com",
+        "emb-api.com",
+        "amazon-adsystem.com",
+        "jotfor.ms",
+        "netomi.com",
+        "textnow.com",
+        "tiqcdn.com",
+        "sentry.io",
+        "verizon.com",
+        "vzw.com",
+        "att.com",
+        "t-mobile.com",
+        "xfinity.com",
+        "comcast.net",
+        "spectrum.com",
+        "charter.com",
+        "timewarnercable.com",
+        "centurylink.com",
+        "level3.com",
+        "frontier.com",
+        "cox.com",
+        "uscellular.com",
+        "boostmobile.com",
+        "cricketwireless.com",
+        "metrobyt-mobile.com",
+        "mintmobile.com",
+        "visible.com",
+        "ultramobile.com"
+      ],
+      "domain_keyword": [
+        "ugoearn",
+        "redpocket",
+        "textnow"
+      ],
+      "ip_cidr": [
+        "208.0.0.0/8",
+        "104.18.0.0/15",
+        "104.21.0.0/20",
+        "172.64.0.0/13",
+        "199.0.0.0/8"
+      ]
+    }
+  ]
+}

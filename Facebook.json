@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "facebook.com",
+        "fb.com",
+        "fb.me",
+        "fbcdn.net",
+        "messenger.com",
+        "instagram.com",
+        "instagr.am",
+        "cdninstagram.com",
+        "whatsapp.com",
+        "whatsapp.net",
+        "whatsapp.biz",
+        "wa.me",
+        "oculus.com",
+        "oculuscdn.com",
+        "threads.net",
+        "meta.com",
+        "workplace.com",
+        "reactjs.org",
+        "m.me",
+        "internet.org",
+        "freebasics.com",
+        "accountkit.com",
+        "atdmt2.com",
+        "parse.com",
+        "liverail.com",
+        "crowdtangle.com",
+        "friendfeed.com",
+        "rocksdb.org",
+        "thefacebook.com"
+      ],
+      "domain_keyword": [
+        "facebook",
+        "fbcdn",
+        "whatsapp",
+        "instagram",
+        "oculus",
+        "threads",
+        "meta"
+      ],
+      "ip_cidr": [
+        "31.13.64.0/18",
+        "157.240.0.0/17",
+        "129.134.0.0/17",
+        "173.252.64.0/18",
+        "69.63.176.0/20",
+        "69.171.224.0/19",
+        "66.220.144.0/20",
+        "3.123.36.126/32",
+        "35.157.215.84/32",
+        "35.157.217.255/32",
+        "52.58.209.134/32",
+        "54.93.124.31/32",
+        "54.162.243.80/32",
+        "54.173.34.141/32",
+        "54.235.23.242/32",
+        "54.93.124.31/32",
+        "108.168.176.192/26",
+        "108.168.177.0/27",
+        "108.168.180.96/27",
+        "108.177.8.0/21",
+        "119.235.224.0/24",
+        "119.235.232.0/24",
+        "119.235.236.0/23"
+      ],
+      "ip_asn": [
+        "32934"
+      ]
+    }
+  ]
+}

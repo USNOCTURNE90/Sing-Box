@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "adobe.com",
+        "adobe.io",
+        "adobelogin.com",
+        "creativecloud.com",
+        "acrobat.com",
+        "behance.net",
+        "typekit.com",
+        "typekit.net",
+        "photoshop.com",
+        "adobecc.com",
+        "demdex.net",
+        "omniture.com",
+        "omtrdc.net",
+        "echosign.com",
+        "adobesign.com",
+        "marketo.com",
+        "magento.com",
+        "scene7.com",
+        "2o7.net",
+        "ftcdn.net",
+        "adobestock.com",
+        "adobedtm.com",
+        "pdf.new",
+        "sign.new",
+        "bam.nr-data.net",
+        "payments.braintree-api.com",
+        "cc-ext-prod-pkgs.s3.amazonaws.com"
+      ],
+      "domain_keyword": [
+        "adobe"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "youtu.be",
+        "yt.be",
+        "ytimg.com",
+        "ggpht.com",
+        "ggpht.cn",
+        "googlevideo.com",
+        "youtube-nocookie.com",
+        "youtubeeducation.com",
+        "youtubefanfest.com",
+        "youtubegaming.com",
+        "youtubekids.com",
+        "youtubemobilesupport.com",
+        "returnyoutubedislikeapi.com",
+        "youtube.googleapis.com",
+        "youtubei.googleapis.com",
+        "youtubeembeddedplayer.googleapis.com"
+      ],
+      "domain_keyword": [
+        "youtube",
+        "youtubego"
+      ],
+      "ip_cidr": [
+        "172.110.32.0/21",
+        "216.73.80.0/20"
+      ]
+    }
+  ]
+}

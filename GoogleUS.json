@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "voice.telephony.goog"
+      ],
+      "domain_suffix": [
+        "googleapis.com",
+        "googleusercontent.com",
+        "googledrive.com",
+        "gstatic.com",
+        "gvt1.com",
+        "gvt2.com",
+        "1e100.net",
+        "google-analytics.com",
+        "doubleclick.net",
+        "googlesyndication.com",
+        "googleadservices.com",
+        "googletagmanager.com",
+        "googletagservices.com",
+        "app-measurement.com",
+        "chrome.com",
+        "chromium.org",
+        "android.com",
+        "tensorflow.org",
+        "firebaseio.com",
+        "firebaseapp.com",
+        "waze.com",
+        "nest.com",
+        "waymo.com",
+        "abc.xyz",
+        "admob.com",
+        "ampproject.org",
+        "certificate-transparency.org",
+        "webrtc.org",
+        "material.io",
+        "polymer-project.org",
+        "flutter.dev",
+        "go.dev",
+        "golang.org",
+        "schema.org",
+        "gmail.com",
+        "recaptcha.net",
+        "googleapis-cn.com",
+        "gstatic-cn.com",
+        "firebase.studio",
+        "cloud.gist.build",
+        "fi.google.com"
+      ],
+      "domain_keyword": [
+        "appspot",
+        "blogspot",
+        "gmail",
+        "google",
+        "recaptcha"
+      ],
+      "ip_cidr": [
+        "172.110.32.0/21",
+        "173.194.0.0/16",
+        "216.73.80.0/20",
+        "74.125.0.0/16"
+      ],
+      "process_name": [
+        "谷歌核心服务域名",
+        "谷歌广告与分析服务",
+        "谷歌常用服务",
+        "其他重要谷歌服务",
+        "特定功能服务",
+        "谷歌IP地址段",
+        "安卓谷歌应用进程",
+        "com.android.vending",
+        "com.google.android.gms",
+        "com.google.android.gsf",
+        "com.google.android.play.games",
+        "BackupandSync"
+      ]
+    }
+  ]
+}

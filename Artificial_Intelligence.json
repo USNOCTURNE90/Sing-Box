@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "workos.com",
+        "chronosphere.io",
+        "x.ai",
+        "imgix.net",
+        "featureassets.org",
+        "api.appcenter.ms",
+        "api.revenuecat.com",
+        "siftscience.com",
+        "prodregistryv2.org",
+        "todesktop.com",
+        "chatgpt.com",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "anthropic.ai",
+        "anthropic.com",
+        "claude.ai",
+        "claudeusercontent.com",
+        "cursor.com",
+        "cursor.sh",
+        "cursor-cdn.com",
+        "cursorlist.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "unpkg.com",
+        "stripe.com",
+        "stripecdn.com",
+        "segment.io",
+        "launchdarkly.com",
+        "browser-intake-datadoghq.com",
+        "static.cloudflareinsights.com",
+        "visualstudio.com",
+        "vscode-cdn.net",
+        "vscode-unpkg.net"
+      ],
+      "domain_keyword": [
+        "openai",
+        "bing"
+      ],
+      "ip_cidr": [
+        "24.199.123.28/32",
+        "64.23.132.171/32"
+      ],
+      "ip_asn": [
+        "20473"
+      ]
+    }
+  ]
+}

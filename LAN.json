@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "router.asus.com",
+        "router.synology.com",
+        "api.smoot.apple.com",
+        "captive.apple.com",
+        "xp.apple.com",
+        "configuration.apple.com",
+        "guzzoni.apple.com",
+        "smp-device-content.apple.com",
+        "aod.itunes.apple.com",
+        "mesu.apple.com",
+        "api.smoot.apple.cn",
+        "gs-loc.apple.com",
+        "mvod.itunes.apple.com",
+        "streamingaudio.itunes.apple.com",
+        "instant-hotspot.svc.apple.com",
+        "smp-device"
+      ],
+      "domain_suffix": [
+        "local",
+        "localhost",
+        "lan",
+        "nip.io",
+        "ess.apple.com",
+        "push-apple.com.akadns.net",
+        "push.apple.com",
+        "lcdn-locator.apple.com",
+        "lcdn-registration.apple.com",
+        "ls.apple.com",
+        "apple-mobileme.com",
+        "icloud.com.cn"
+      ],
+      "ip_cidr": [
+        "127.0.0.0/8",
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "169.254.0.0/16",
+        "224.0.0.0/4",
+        "240.0.0.0/4",
+        "fc00::/7",
+        "fe80::/10",
+        "fd00::/8"
+      ],
+      "process_name": [
+        "trustd",
+        "netbiosd"
+      ]
+    }
+  ]
+}
