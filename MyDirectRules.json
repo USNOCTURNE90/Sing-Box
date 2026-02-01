@@ -6,6 +6,7 @@
         "edge-076.xasha1.icloud-content.com.cn"
       ],
       "domain_suffix": [
+        "local",
         "aaplimg.com",
         "apple.com",
         "apple.cn",
@@ -138,6 +139,11 @@
         "mxdl"
       ],
       "ip_cidr": [
+        "192.168.0.0/16",
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "127.0.0.0/8",
+        "169.254.0.0/16",
         "163.181.77.215/32",
         "163.181.77.216/32",
         "163.181.77.220/32",
@@ -158,6 +164,8 @@
         "6185"
       ],
       "process_name": [
+        "[Rule]",
+        "IP-CIDR6",
         "Battle.net.exe",
         "Wow.exe",
         "PlatformWebBrowser.exe",
