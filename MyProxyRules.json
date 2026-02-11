@@ -32,6 +32,7 @@
         "http-inputs-notion.splunkcloud.com"
       ],
       "domain_suffix": [
+        "people.apple.com",
         "icloud-content.com",
         "appsto.re",
         "smoot.apple.com",
