@@ -6,6 +6,11 @@
         "cdn.usefathom.com"
       ],
       "domain_suffix": [
+        "paypal.com",
+        "paypal.me",
+        "paypal-mktg.com",
+        "paypalobjects.com",
+        "api.sprig.com",
         "tktn.be",
         "hcaptcha.com",
         "mixpanel.com",
