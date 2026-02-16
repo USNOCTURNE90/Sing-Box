@@ -3,6 +3,22 @@
   "rules": [
     {
       "domain_suffix": [
+        "alipay-corp.com",
+        "alipay-eco.com",
+        "alipay-inc.com",
+        "alipay-traffic.com",
+        "alipay.com",
+        "alipay.hk",
+        "alipay.net",
+        "alipaydesign.com",
+        "alipaydev.com",
+        "alipaydns.com",
+        "alipayeshop.com",
+        "alipaylog.com",
+        "alipaymo.com",
+        "alipayobjects.com",
+        "alipayplus.com",
+        "luohanacademy.com",
         "1306379396.file.myqcloud.com",
         "usmartsg.com",
         "openbb.co",
