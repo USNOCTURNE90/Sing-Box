@@ -6,6 +6,9 @@
         "edge-076.xasha1.icloud-content.com.cn"
       ],
       "domain_suffix": [
+        "fbsbx.com",
+        "mhitpoker.com",
+        "unity3d.com",
         "local",
         "aaplimg.com",
         "apple.com",
@@ -164,7 +167,6 @@
         "6185"
       ],
       "process_name": [
-        "[Rule]",
         "IP-CIDR6",
         "Battle.net.exe",
         "Wow.exe",
