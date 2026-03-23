@@ -18,7 +18,6 @@
         "oaiusercontent.com",
         "anthropic.ai",
         "anthropic.com",
-        "claude.ai",
         "claudeusercontent.com",
         "cursor.com",
         "cursor.sh",
@@ -39,7 +38,8 @@
       ],
       "domain_keyword": [
         "openai",
-        "bing"
+        "bing",
+        "claude"
       ],
       "ip_cidr": [
         "24.199.123.28/32",
