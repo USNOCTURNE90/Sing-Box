@@ -3,34 +3,10 @@
   "rules": [
     {
       "domain": [
-        "lf16-effectcdn.byteeffecttos-g.com",
-        "lf16-pkgcdn.pitaya-clientai.com",
-        "p16-tiktokcdn-com.akamaized.net",
         "voice.telephony.goog",
         "cdn.usefathom.com"
       ],
       "domain_suffix": [
-        "bytedapm.com",
-        "bytegecko-i18n.com",
-        "byteoversea.com",
-        "capcut.com",
-        "ibytedtos.com",
-        "ibyteimg.com",
-        "ipstatp.com",
-        "isnssdk.com",
-        "muscdn.com",
-        "musical.ly",
-        "sgpstatp.com",
-        "snssdk.com",
-        "tik-tokapi.com",
-        "tiktok.com",
-        "tiktokcdn-us.com",
-        "tiktokcdn.com",
-        "tiktokd.net",
-        "tiktokd.org",
-        "tiktokmusic.app",
-        "tiktokv.com",
-        "tiktokv.us",
         "youtu.be",
         "yt.be",
         "ytimg.com",
@@ -153,8 +129,6 @@
         "ultramobile.com"
       ],
       "domain_keyword": [
-        "musical.ly",
-        "tiktok",
         "youtube",
         "youtubego",
         "appspot",
