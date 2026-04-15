@@ -21,15 +21,15 @@ jobs:
 
       - name: Pull and Convert Rules
         run: |
-          python3 -c '  
+          cat > /tmp/convert.py << 'PYEOF'
           import os, json, re, subprocess, shutil
           from pathlib import Path
           from datetime import datetime, timedelta
 
-          def get_time(): return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S")
+          def get_time():
+              return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S")
 
           def parse_to_sb(lines):
-              # Sing-Box 支持的规则类型，排除 PROCESS-NAME 等不支持的
               rd = {
                   "domain": [],
                   "domain_suffix": [],
@@ -37,7 +37,6 @@ jobs:
                   "ip_cidr": [],
                   "ip_asn": []
               }
-              # 只保留 Sing-Box 支持的规则类型
               supported = {
                   "DOMAIN": "domain",
                   "DOMAIN-SUFFIX": "domain_suffix",
@@ -48,25 +47,24 @@ jobs:
               }
               for l in lines:
                   l = l.strip()
-                  if not l or l.startswith("#"): continue
+                  if not l or l.startswith("#"):
+                      continue
                   ps = l.split(",")
                   px = ps[0].upper()
                   if px in supported and len(ps) >= 2:
                       val = ps[1].strip()
                       if val:
                           rd[supported[px]].append(val)
-                  # 纯IP/CIDR格式直接处理
                   elif re.match(r"^\d+\.\d+\.\d+\.\d+(/\d+)?$", l):
-                      rd["ip_cidr"].append(l if "/" in l else f"{l}/32")
+                      rd["ip_cidr"].append(l if "/" in l else l + "/32")
               act = {k: v for k, v in rd.items() if v}
               return {"version": 1, "rules": [act]} if act else None
 
-          # 克隆 Surge 仓库 Surge 分支
           temp_dir = Path("/tmp/surge_rules")
-          if temp_dir.exists(): shutil.rmtree(temp_dir)
+          if temp_dir.exists():
+              shutil.rmtree(temp_dir)
           subprocess.run(["git", "clone", "--depth=1", "-b", "Surge", "https://github.com/USNOCTURNE90/Surge.git", str(temp_dir)], check=True)
 
-          # 识别无后缀规则文件并转换
           excludes = [".git", ".github", "LICENSE", "README.md", "format_rules.py", "full_sync.py", "clash_repo"]
           files = [f for f in temp_dir.glob("*") if f.is_file() and f.name not in excludes and f.suffix not in [".py", ".yml", ".md", ".json"]]
 
@@ -75,25 +73,26 @@ jobs:
               with open(f_path, "r", encoding="utf-8") as f:
                   sb_data = parse_to_sb(f.readlines())
               if sb_data:
-                  target = Path(".") / f"{f_path.name}.json"
+                  target = Path(".") / (f_path.name + ".json")
                   with open(target, "w", encoding="utf-8") as f:
                       json.dump(sb_data, f, indent=2, ensure_ascii=False)
                   processed += 1
-                  print(f"Converted: {f_path.name}.json")
+                  print("Converted: " + f_path.name + ".json")
 
-          print(f"Total converted: {processed} files")
+          print("Total converted: " + str(processed) + " files")
 
-          # 推送
           subprocess.run(["git", "config", "user.name", "GitHub Actions Bot"], check=True)
           subprocess.run(["git", "config", "user.email", "actions@github.com"], check=True)
-          subprocess.run(["git", "add", "*.json"], check=True)
+          subprocess.run(["git", "add", "-A"], check=True)
           status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
           if status.strip():
-              subprocess.run(["git", "commit", "-m", f"Sync from Surge: {get_time()}", check=True])
-              subprocess.run(["git", "push", "https://x-access-token:$GITHUB_TOKEN@github.com/USNOCTURNE90/Sing-Box.git"], check=True)
+              subprocess.run(["git", "commit", "-m", "Sync from Surge: " + get_time()], check=True)
+              token = os.environ.get("GITHUB_TOKEN")
+              subprocess.run(["git", "push", "https://x-access-token:" + token + "@github.com/USNOCTURNE90/Sing-Box.git"], check=True)
               print("Sync successful.")
           else:
               print("No changes to sync.")
-          '
+          PYEOF
+          python3 /tmp/convert.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
