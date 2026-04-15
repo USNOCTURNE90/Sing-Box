@@ -30,9 +30,6 @@
         "disneyjunior.com",
         "execute-api.us-east-1.amazonaws.com",
         "primevideo.com"
-      ],
-      "process_name": [
-        "com.disney.disneyplus"
       ]
     }
   ]

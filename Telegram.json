@@ -47,12 +47,6 @@
         "62014",
         "62041",
         "211157"
-      ],
-      "process_name": [
-        "org.telegram.messenger",
-        "telegram-desktop",
-        "nekox.messenger",
-        "tw.nekomimi.nekogram"
       ]
     }
   ]

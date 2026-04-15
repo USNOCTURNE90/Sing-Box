@@ -178,21 +178,6 @@
         "104.21.0.0/20",
         "172.64.0.0/13",
         "199.0.0.0/8"
-      ],
-      "process_name": [
-        "com.zhiliaoapp.musically",
-        "谷歌核心服务域名",
-        "谷歌广告与分析服务",
-        "谷歌常用服务",
-        "其他重要谷歌服务",
-        "特定功能服务",
-        "谷歌IP地址段",
-        "安卓谷歌应用进程",
-        "com.android.vending",
-        "com.google.android.gms",
-        "com.google.android.gsf",
-        "com.google.android.play.games",
-        "BackupandSync"
       ]
     }
   ]

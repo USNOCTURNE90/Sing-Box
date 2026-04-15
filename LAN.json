@@ -45,10 +45,6 @@
         "fc00::/7",
         "fe80::/10",
         "fd00::/8"
-      ],
-      "process_name": [
-        "trustd",
-        "netbiosd"
       ]
     }
   ]

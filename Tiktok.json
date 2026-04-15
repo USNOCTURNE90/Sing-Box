@@ -34,9 +34,6 @@
         "-tiktokcdn-com",
         "musical.ly",
         "tiktok"
-      ],
-      "process_name": [
-        "com.zhiliaoapp.musically"
       ]
     }
   ]

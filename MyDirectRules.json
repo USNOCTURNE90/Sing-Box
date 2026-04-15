@@ -171,14 +171,6 @@
       "ip_asn": [
         "714",
         "6185"
-      ],
-      "process_name": [
-        "Battle.net.exe",
-        "Wow.exe",
-        "PlatformWebBrowser.exe",
-        "LeagueClient.exe",
-        "SC2_x64.exe",
-        "OR"
       ]
     }
   ]

@@ -323,10 +323,6 @@
       ],
       "ip_asn": [
         "32934"
-      ],
-      "process_name": [
-        "obs64.exe",
-        "AdguardSvc.exe"
       ]
     }
   ]
