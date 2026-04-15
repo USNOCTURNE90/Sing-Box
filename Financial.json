@@ -33,7 +33,6 @@
         "cdn.zaticdn.com",
         "bankappgw.za.group",
         "aim-abtesting-sdk.za.group",
-        "bankappgw.za.group",
         "bank-sbsmarket.zafinsvc.com",
         "appguard.za.group",
         "optionstrat.com",
@@ -61,7 +60,6 @@
         "tdameritrade.com",
         "ameritrade.com",
         "ifaa.org.cn",
-        "luohanacademy.com",
         "sinopayment.com.cn",
         "ocsp.digicert.com",
         "c.go-mpulse.net",
@@ -104,9 +102,7 @@
         "ingest.contribute.live-video.net",
         "o.ss2.us",
         "obsproject.com",
-        "store.steampowered.com",
-        "yahooapis.com",
-        "yimg.com"
+        "store.steampowered.com"
       ],
       "domain_keyword": [
         "osl",

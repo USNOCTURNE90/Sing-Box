@@ -19,10 +19,6 @@
         "alipayobjects.com",
         "alipayplus.com",
         "luohanacademy.com"
-      ],
-      "ip_cidr": [
-        "123.123.123.123/32",
-        "2.2.2.2/32"
       ]
     }
   ]

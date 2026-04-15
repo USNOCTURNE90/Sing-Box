@@ -20,6 +20,9 @@
         "- IP-CIDR",
         "- IP-CIDR",
         "- IP-CIDR"
+      ],
+      "domain_keyword": [
+        "twitter"
       ]
     }
   ]
