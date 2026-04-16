@@ -7,6 +7,38 @@
         "cdn.usefathom.com"
       ],
       "domain_suffix": [
+        "workos.com",
+        "chronosphere.io",
+        "x.ai",
+        "imgix.net",
+        "featureassets.org",
+        "api.appcenter.ms",
+        "api.revenuecat.com",
+        "siftscience.com",
+        "prodregistryv2.org",
+        "todesktop.com",
+        "chatgpt.com",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "anthropic.ai",
+        "anthropic.com",
+        "claudeusercontent.com",
+        "cursor.com",
+        "cursor.sh",
+        "cursor-cdn.com",
+        "cursorlist.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "unpkg.com",
+        "stripe.com",
+        "stripecdn.com",
+        "segment.io",
+        "launchdarkly.com",
+        "browser-intake-datadoghq.com",
+        "static.cloudflareinsights.com",
+        "visualstudio.com",
+        "vscode-cdn.net",
+        "vscode-unpkg.net",
         "youtu.be",
         "yt.be",
         "ytimg.com",
@@ -129,6 +161,9 @@
         "ultramobile.com"
       ],
       "domain_keyword": [
+        "openai",
+        "bing",
+        "claude",
         "youtube",
         "youtubego",
         "appspot",
@@ -141,6 +176,8 @@
         "textnow"
       ],
       "ip_cidr": [
+        "24.199.123.28/32",
+        "64.23.132.171/32",
         "172.110.32.0/21",
         "216.73.80.0/20",
         "173.194.0.0/16",
@@ -150,6 +187,9 @@
         "104.21.0.0/20",
         "172.64.0.0/13",
         "199.0.0.0/8"
+      ],
+      "ip_asn": [
+        "20473"
       ]
     }
   ]
