@@ -7,6 +7,10 @@
         "cdn.usefathom.com"
       ],
       "domain_suffix": [
+        "slackhq.com",
+        "slackb.com",
+        "slack.com",
+        "slack-edge.com",
         "usnocturne90.us",
         "cloudflare-dns.com",
         "cloudflare.com",
@@ -28,8 +32,7 @@
         "youtubekids.com",
         "youtubemobilesupport.com",
         "returnyoutubedislikeapi.com",
-        "youtube.googleapis.com",
-        "youtubei.googleapis.com",
+        "googleapis.com",
         "youtubeembeddedplayer.googleapis.com",
         "workos.com",
         "chronosphere.io",
