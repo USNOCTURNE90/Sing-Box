@@ -17,23 +17,13 @@
         "ipstatp.com",
         "isnssdk.com",
         "muscdn.com",
-        "musical.ly",
         "sgpstatp.com",
-        "snssdk.com",
-        "tik-tokapi.com",
-        "tiktok.com",
-        "tiktokcdn-us.com",
-        "tiktokcdn.com",
-        "tiktokd.net",
-        "tiktokd.org",
-        "tiktokmusic.app",
-        "tiktokv.com",
-        "tiktokv.us"
+        "snssdk.com"
       ],
       "domain_keyword": [
+        "tiktok",
         "-tiktokcdn-com",
-        "musical.ly",
-        "tiktok"
+        "musical.ly"
       ]
     }
   ]
