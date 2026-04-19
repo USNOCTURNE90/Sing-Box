@@ -2,17 +2,43 @@
   "version": 1,
   "rules": [
     {
+      "domain": [
+        "api.smoot.apple.com",
+        "captive.apple.com",
+        "xp.apple.com",
+        "configuration.apple.com",
+        "guzzoni.apple.com",
+        "smp-device-content.apple.com",
+        "aod.itunes.apple.com",
+        "mesu.apple.com",
+        "api.smoot.apple.cn",
+        "gs-loc.apple.com",
+        "mvod.itunes.apple.com",
+        "streamingaudio.itunes.apple.com"
+      ],
       "domain_suffix": [
-        "IP-CIDR 0.0.0.0/8",
-        "IP-CIDR 10.0.0.0/8",
-        "IP-CIDR 100.64.0.0/10",
-        "IP-CIDR 127.0.0.0/8",
-        "IP-CIDR 172.16.0.0/12",
-        "IP-CIDR 169.254.0.0/16",
-        "IP-CIDR 192.0.0.0/24",
-        "IP-CIDR 192.0.2.0/24",
-        "IP-CIDR 192.168.0.0/16",
-        "IP-CIDR 224.0.0.0/4"
+        "local",
+        "ess.apple.com",
+        "push-apple.com.akadns.net",
+        "push.apple.com",
+        "lcdn-locator.apple.com",
+        "lcdn-registration.apple.com",
+        "ls.apple.com"
+      ],
+      "ip_cidr": [
+        "0.0.0.0/8",
+        "10.0.0.0/8",
+        "100.64.0.0/10",
+        "127.0.0.0/8",
+        "172.16.0.0/12",
+        "169.254.0.0/16",
+        "192.0.0.0/24",
+        "192.0.2.0/24",
+        "192.168.0.0/16",
+        "224.0.0.0/4",
+        "::1/128",
+        "fc00::/7",
+        "fe80::/10"
       ]
     }
   ]
