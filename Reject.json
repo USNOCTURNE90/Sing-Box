@@ -4,6 +4,16 @@
     {
       "domain": [
         "msmp.abchina.com.cn"
+      ],
+      "domain_suffix": [
+        "bnbstatic.com",
+        "bncstatic.com",
+        "bntrace.com",
+        "bnbchain.org"
+      ],
+      "domain_keyword": [
+        "binance",
+        "binancezh"
       ]
     }
   ]
