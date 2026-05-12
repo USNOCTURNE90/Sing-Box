@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "people.apple.com",
         "cloudflare-dns.com",
         "dns.google",
         "voice.telephony.goog",
