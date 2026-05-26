@@ -2,6 +2,9 @@
   "version": 1,
   "rules": [
     {
+      "domain": [
+        "people.apple.com"
+      ],
       "domain_suffix": [
         "push.apple.com",
         "akadns.net"
