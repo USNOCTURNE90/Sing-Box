@@ -24,6 +24,7 @@
       "domain_suffix": [
         "teslamotors.com",
         "nip.io",
+        "icloud-content.com",
         "icloud-content.com.cn",
         "ess.apple.com",
         "push-apple.com.akadns.net",
@@ -32,18 +33,21 @@
         "lcdn-registration.apple.com",
         "ls.apple.com",
         "apple-mobileme.com",
+        "apple-cloudkit.com",
+        "apple-livephotoskit.com",
+        "apzones.com",
+        "gc.apple.com",
+        "iwork.apple.com",
+        "icloud.apple.com",
         "icloud.com.cn",
         "uc.cmd",
         "fbsbx.com",
         "mhitpoker.com",
         "unity3d.com",
-        "aaplimg.com",
-        "apple.com",
-        "apple.cn",
-        "apple.com.cn",
+        "apps.apple.com",
+        "itunes.apple.com",
         "cdn-apple.com",
         "icloud.com",
-        "itunes.com",
         "me.com",
         "mzstatic.com",
         "windows.com",
@@ -179,10 +183,6 @@
         "129.227.71.37/32",
         "52.139.169.119/32",
         "103.36.24.14/32"
-      ],
-      "ip_asn": [
-        "714",
-        "6185"
       ]
     }
   ]
