@@ -5,6 +5,7 @@
       "domain": [
         "cloudflare-dns.com",
         "dns.google",
+        "challenges.cloudflare.com",
         "voice.telephony.goog",
         "cdn.usefathom.com"
       ],
@@ -28,7 +29,9 @@
         "ggpht.cn",
         "googlevideo.com",
         "googleapis.com",
+        "openai.com",
         "workos.com",
+        "workoscdn.com",
         "chronosphere.io",
         "x.ai",
         "imgix.net",
@@ -41,6 +44,10 @@
         "chatgpt.com",
         "oaistatic.com",
         "oaiusercontent.com",
+        "oaistatsig.com",
+        "openaimerge.com",
+        "ct.sendgrid.net",
+        "ingest.sentry.io",
         "anthropic.ai",
         "anthropic.com",
         "claudeusercontent.com",

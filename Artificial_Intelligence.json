@@ -2,8 +2,13 @@
   "version": 1,
   "rules": [
     {
+      "domain": [
+        "challenges.cloudflare.com"
+      ],
       "domain_suffix": [
+        "openai.com",
         "workos.com",
+        "workoscdn.com",
         "chronosphere.io",
         "x.ai",
         "imgix.net",
@@ -16,6 +21,10 @@
         "chatgpt.com",
         "oaistatic.com",
         "oaiusercontent.com",
+        "oaistatsig.com",
+        "openaimerge.com",
+        "ct.sendgrid.net",
+        "ingest.sentry.io",
         "anthropic.ai",
         "anthropic.com",
         "claudeusercontent.com",
