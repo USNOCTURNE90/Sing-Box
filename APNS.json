@@ -3,9 +3,15 @@
   "rules": [
     {
       "domain": [
-        "people.apple.com"
+        "people.apple.com",
+        "guzzoni.apple.com",
+        "apple-relay.cloudflare.com",
+        "apple-relay.fastly-edge.com",
+        "cp4.cloudflare.com",
+        "apple-relay.apple.com"
       ],
       "domain_suffix": [
+        "smoot.apple.com",
         "push.apple.com",
         "akadns.net"
       ],
