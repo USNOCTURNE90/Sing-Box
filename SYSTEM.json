@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "api.smoot.apple.com",
+        "captive.apple.com",
+        "xp.apple.com",
+        "configuration.apple.com",
+        "guzzoni.apple.com",
+        "smp-device-content.apple.com",
+        "aod.itunes.apple.com",
+        "mesu.apple.com",
+        "api.smoot.apple.cn",
+        "gs-loc.apple.com",
+        "mvod.itunes.apple.com",
+        "streamingaudio.itunes.apple.com"
+      ],
+      "domain_suffix": [
+        "ess.apple.com",
+        "push-apple.com.akadns.net",
+        "push.apple.com",
+        "lcdn-locator.apple.com",
+        "lcdn-registration.apple.com",
+        "ls.apple.com"
+      ]
+    },
+    {
+      "process_name": [
+        "trustd",
+        "netbiosd"
+      ]
+    }
+  ]
+}

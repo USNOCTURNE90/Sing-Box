@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "process_name": [
+        "trustd",
+        "netbiosd",
+        "Battle.net.exe",
+        "Wow.exe",
+        "PlatformWebBrowser.exe",
+        "LeagueClient.exe",
+        "SC2_x64.exe"
+      ]
+    },
+    {
+      "package_name": [
+        "com.eagleyun.sase.helper"
+      ]
+    }
+  ]
+}
