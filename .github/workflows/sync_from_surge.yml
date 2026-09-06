@@ -81,6 +81,11 @@ jobs:
 
           print("Total converted: " + str(processed) + " files")
 
+          # Validate/prepare existing sing-box JSON before publishing it.
+          # Keep the existing upstream sync; do not reintroduce unsupported ip_asn.
+          subprocess.run(["python3", ".github/scripts/test_prepare_native_rules.py"], check=True)
+          subprocess.run(["python3", ".github/scripts/prepare_native_rules.py"], check=True)
+
           subprocess.run(["git", "config", "user.name", "GitHub Actions Bot"], check=True)
           subprocess.run(["git", "config", "user.email", "actions@github.com"], check=True)
           subprocess.run(["git", "add", "-A"], check=True)
@@ -96,3 +101,4 @@ jobs:
           python3 /tmp/convert.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYTHONDONTWRITEBYTECODE: '1'
