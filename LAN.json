@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "asuscomm.com",
         "local"
       ],
       "ip_cidr": [
